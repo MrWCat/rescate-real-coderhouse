@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Rescate Real</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/styles/simple-sidebar.css" rel="stylesheet">
+
+    <!-- Plus my own CSS -->
+    <link href="assets/styles/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="d-flex toggled" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Menú principal</div>
+            <div class="list-group list-group-flush">
+                <button class="btn list-group-item list-group-item-action bg-light" id="new-game">Nueva partida</button>
+                <button class="btn list-group-item list-group-item-action bg-light" id="load-game">Cargar partida</button>
+                <button class="btn list-group-item list-group-item-action bg-light" id="save-game">Guardar partida</button>
+                <button class="btn list-group-item list-group-item-action bg-light" id="daily-game">Nuevo desafío diario</button>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle"><img src="assets\images\menu-pngrepo-com.png" alt="Abrir/Cerrar Menú" height="32" width="32"></button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <h1 class="game-title">Rescate Real</h1>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <br>
+
+            <div class="container p-3" id="main-board">
+                <div class="row m-2">
+                    <button class="btn col-2 d-flex justify-content-center board-square current-square" id="btn-1-1">
+                        <img src="assets\images\camping-tent.png" alt="Campamento" height="64" width="64" id="img-1-1">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-1-2">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-1-2">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-1-3">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-1-3">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-1-4">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-1-4">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-1-5">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-1-5">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-1-6">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-1-6">
+                    </button>
+                </div>
+
+                <div class="row m-2">
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-2-1">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-2-1">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-2-2">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-2-2">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-2-3">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-2-3">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-2-4">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-2-4">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-2-5">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-2-5">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-2-6">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-2-6">
+                    </button>
+                </div>
+
+                <div class="row m-2">
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-3-1">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-3-1">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-3-2">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-3-2">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-3-3">
+                        <img src="assets\images\spiked-dragon-head.png" alt="Dragón" height="64" width="64" id="img-3-3">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-3-4">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-3-4">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-3-5">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-3-5">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-3-6">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-3-6">
+                    </button>
+                </div>
+
+                <div class="row m-2">
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-4-1">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-4-1">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-4-2">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-4-2">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-4-3">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-4-3">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-4-4">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-4-4">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-4-5">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-4-5">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-4-6">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-4-6">
+                    </button>
+                </div>
+
+                <div class="row m-2">
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-5-1">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-5-1">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-5-2">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-5-2">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-5-3">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-5-3">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-5-4">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-5-4">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-5-5">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-5-5">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-5-6">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-5-6">
+                    </button>
+                </div>
+
+                <div class="row m-2">
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-6-1">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-6-1">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-6-2">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-6-2">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-6-3">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-6-3">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-6-4">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-6-4">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-6-5">
+                        <img src="assets\images\card-random.png" alt="Sin descubrir" height="64" width="64" id="img-6-5">
+                    </button>
+
+                    <button class="btn col-2 d-flex justify-content-center board-square" id="btn-6-6">
+                        <img src="assets\images\heart-tower.png" alt="Príncipe" height="64" width="64" id="img-6-6">
+                    </button>
+                </div>
+            </div>
+
+            <div class="container control-panel mt-3 mb-1" id="inventory-panel">
+                <div class="row d-flex flex-row align-items-center justify-content-center">
+                    <div class="col d-flex flex-row align-items-center justify-content-center">
+                        <img src="assets/images/health-potion.png" alt="PVs" height="64" width="64">
+                        <p id="hp">PVs actuales: 3</p>
+                        <p id="hp-max">/3</p>
+                    </div>
+
+                    <div class="col d-flex flex-row align-items-center justify-content-center">
+                        <img src="assets/images/two-handed-sword.png" alt="Espadas" height="64" width="64">
+                        <p id="swords">Espadas: 1</p>
+                    </div>
+
+                    <div class="col d-flex flex-row align-items-center justify-content-center">
+                        <img src="assets/images/checked-shield.png" alt="Escudos" height="64" width="64">
+                        <p id="shields">Escudos: 0</p>
+                    </div>
+
+                    <div class="col d-flex flex-row align-items-center justify-content-center">
+                        <img src="assets/images/compass.png" alt="Brújulas" height="64" width="64">
+                        <p id="accessories">Brújulas: 0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container control-panel mt-3 mb-1" id="desc-panel">
+                <div class="col d-flex align-items-center">
+                    <p class="mx-auto text-center" id="desc-text">¡Bienvenido a Rescate Real! Para comenzar, tira los dados pulsando el botón que figura debajo.</p>
+                </div>
+            </div>
+
+            <div class="container control-panel" id="combat-roller">
+                <div class="col d-flex flex-row align-items-center justify-content-center">
+                    Posición:
+                    <div class="btn-group">
+                        <button class="btn btn-secondary active stance-button" id="no-stance"><img src="assets\images\camping-tent.png" alt="Normal" height="32" width="32"></button>
+                        <button class="btn btn-secondary stance-button" id="off-stance"><img src="assets\images\two-handed-sword.png" alt="Ofensiva" height="32" width="32"></button>
+                        <button class="btn btn-secondary stance-button" id="def-stance"><img src="assets\images\checked-shield.png" alt="Defensiva" height="32" width="32"></button>
+                    </div>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col d-flex">
+                    <button class="btn btn-primary mx-auto" id="roll-combat-button"><img src="assets\images\rolling-dices.png" alt="Tirar dados" height="64" width="64"></button>
+                </div>
+            </div>
+
+            <div class="container control-panel" id="combat-results">
+                <div class="col d-flex flex-row align-items-center justify-content-center">
+                    <img src="assets\images\rolling-dices.png" alt="Dados" heigth="64" width="64">Dado:
+
+                    <img src="assets\images\inverted-dice-1.png" alt="1" heigth="32" width="32" id="combat-dice">
+                </div>
+            </div>
+
+            <div class="container control-panel" id="dice-roller">
+                <div class="col d-flex">
+                    <button class="btn btn-primary mx-auto" id="roll-button"><img src="assets\images\rolling-dices.png" alt="Tirar dados" height="64" width="64"></button>
+                </div>
+            </div>
+
+            <div class="container control-panel" id="dice-results">
+                <div class="col d-flex flex-row align-items-center justify-content-center">
+                    <img src="assets\images\rolling-dices.png" alt="Dados" heigth="64" width="64">Dados:
+
+                    <img src="assets\images\inverted-dice-1.png" alt="1" heigth="32" width="32" id="dice-1">
+
+                    <img src="assets\images\inverted-dice-1.png" alt="1" heigth="32" width="32" id="dice-2">
+                </div>
+            </div>
+
+            <footer class="container-fluid justify-content-center my-1">
+                <div class="col">
+                    <center>Diseño web © 2020 Eric Williams, todos los derechos reservados.</center>
+                    <center>Tema © 2013-2020 Start Bootstrap LLC.</center>
+                    <center>Gráficos cortesía de Lorc, Delapouite & otros. Usado bajo licencia Creative Commons CC-BY-SA 3.0. https://gameicons.net/</center>
+                </div>
+            </footer>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets\data\init.js"></script>
+    <script src="assets\data\strings.js"></script>
+    <script src="assets\data\deck.js"></script>
+    <script src="assets\data\player.js"></script>
+    <script src="assets\data\tile.js"></script>
+    <script src="assets\data\map.js"></script>
+    <script src="assets\data\main.js"></script>
+    <script src="assets\data\domLoading.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>

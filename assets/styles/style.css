@@ -1,0 +1,39 @@
+#main-board,
+#control-panel {
+    border-radius: 25px;
+}
+
+#main-board {
+    background-color: Black;
+}
+
+.board-square {
+    border-radius: 30px;
+    background-color: DimGrey;
+}
+
+.current-square {
+    border: 3px solid White;
+}
+
+#btn-1-1 {
+    background-color: #066e96;
+}
+
+#btn-3-3 {
+    background-color: #EE2900;
+}
+
+#btn-6-6 {
+    background-color: LightPink;
+}
+
+.selectable-square {
+    border: 3px solid #00ad42;
+    background-color: White;
+}
+
+footer {
+    font-size: 12px;
+    font-style: italic;
+}
